@@ -28,7 +28,7 @@ app.use('/', router);
 
 //inicia o servidor
 app.listen(port);
-//console.log('API funcionando!');
+console.log('API funcionando!');
 
 function execSQLQuery(sqlQry, res){
     global.conn.request()
