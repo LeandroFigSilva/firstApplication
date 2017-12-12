@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();         
 const bodyParser = require('body-parser');
-const port = 3000; //porta padrão
+const port = process.env.PORT || 3000; //porta padrão
 const sql = require('mssql');
 const connStr = "Server=169.57.143.154,51433;Database=Leandro;User Id=Leandro;Password=silva@2018;";
 
