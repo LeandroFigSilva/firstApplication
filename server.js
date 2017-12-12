@@ -47,3 +47,9 @@ function execSQLQuery(sqlQry, res){
 router.get('/usuarios', function(req, res){
     execSQLQuery('SELECT [Id do Usuário], Nome, Email, Senha FROM dbo.Usuários', res);
 })
+
+router.get('/newuser', function(req, res){
+    //execSQLQuery('SELECT [Id do Usuário], Nome, Email, Senha FROM dbo.Usuários', res);
+    console.log(req);
+    console.log(res)
+})
